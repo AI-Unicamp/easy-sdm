@@ -18,21 +18,6 @@ from easy_sdm.utils.data_loader import DatasetLoader, ShapefileLoader
 
 app = typer.Typer()
 
-all_milpa_species_dict = {
-    5290052: "Zea mays",
-    7393329: "Cucurbita moschata",
-    2874515: "Cucurbita maxima",
-    2874508: "Cucurbita pepo",
-    5350452: "Phaseolus vulgaris",
-    2982583: "Vigna unguiculata",
-    7587087: "Cajanus cajan",
-    3086357: "Piper nigrum",
-    2932944: "Capsicum annuum",
-    2932938: "Capsicum baccatum",
-    8403992: "Capsicum frutescens",
-    2932942: "Capsicum chinense",
-}
-
 milpa_species_dict = {
     5290052: "Zea mays",
     2874508: "Cucurbita pepo",
@@ -42,6 +27,7 @@ milpa_species_dict = {
 
 data_dirpath = Path.cwd() / "data"
 all_algorithims_string = "mlp, gradient_boosting, ensemble_forest, xgboost, xgboostrf, tabnet, ocsvm, autoencoder"
+
 # estimator selection
 def estimator_type_selector(estimator_type: str):
     estimator_type = estimator_type.lower()

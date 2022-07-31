@@ -27,10 +27,6 @@ gbif:
   try_override_species_data: True
   country: "BR"
 
-species:
-  id: 7587087
-  name: "Cajanus cajan"
-
 # https://stats.stackexchange.com/questions/347185/what-is-the-parameter-nu-in-oneclass-svm
 OCSVM:
   kernel: 'rbf'
