@@ -23,3 +23,4 @@ We modeled SDMs in a pipeline that combines One Class Support Vector Machine (OC
 ## 2) br-env
 
 **br-env** is a standardized database framed on the Brazilian territory that combines data from [ENVIREM](https://envirem.github.io/), [BIOCLIM](https://www.worldclim.org/data/worldclim21.html) and [Soilgrids](https://soilgrids.org/). It consists in a 3D numpy array  with dimensions [K, W, H] and a list artifact containing the variables’ names in the order they were placed in the matrix. K is the number of environment variables, M is the number of matrix widths, and H is the matrix height. We consider **br-env** as a major contribution of our work once it can be used as a backbone for SDMs modeled with diffent algorithms and species, being relevant to speed up ecological studies in Brazil.
+To download **br-env** please go[here](https://drive.google.com/drive/folders/1M2txhMKZif6dnJAt-xFREuMwOMux4BLz?usp=sharing)
