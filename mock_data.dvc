@@ -1,0 +1,5 @@
+outs:
+- md5: 299caeef3ec60739543e65d66735a945.dir
+  size: 1045087266
+  nfiles: 30
+  path: mock_data

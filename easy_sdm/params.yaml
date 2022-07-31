@@ -1,0 +1,51 @@
+maps:
+  region_limits:
+      west: -73.981934
+      east: -34.792929
+      south: -33.750035
+      north: 5.271478
+  region_limits_with_security:
+      west: -74.981934
+      east: -33.792929
+      south: -34.750035
+      north: 6.271478
+
+  no_data_val: -9999.0
+  default_epsg: 4326
+  resolution: 0.00833333333333334
+
+mask:
+  positive_mask_val: 0
+  negative_mask_val: -9999
+
+gbif:
+  one_request_limit: 300
+  has_coordinate: True
+  low_year: 2000
+  up_year: 2022
+  drop_duplicates: True
+  try_override_species_data: True
+  country: "BR"
+
+species:
+  id: 7587087
+  name: "Cajanus cajan"
+
+# https://stats.stackexchange.com/questions/347185/what-is-the-parameter-nu-in-oneclass-svm
+OCSVM:
+  kernel: 'rbf'
+  gamma: 'scale'
+  nu: 0.5
+
+model:
+  binary_classification:
+    mlp:
+      hidden_layer_sizes:
+      activation:
+
+
+  anomaly_detection:
+    ocsvm:
+      kernel: 'rbf'
+      gamma: 'scale'
+      nu: 0.5
