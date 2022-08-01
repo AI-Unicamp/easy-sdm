@@ -31,6 +31,7 @@ statsmodels = "^0.13.2"
 optuna = "^2.10.0"
 scipy = "^1.8.0"
 xgboost = "^1.6.0"
+wget = "^3.2"
 
 [tool.poetry.scripts]
 easy_sdm = "easy_sdm.console:app"
